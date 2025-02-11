@@ -1,4 +1,36 @@
 body {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
+}
+
+#demo .minibox {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: #996da6;
+  transition: 2s;
+}
+#demo .minibox:hover {
+  width: 300px;
+}
+#demo .minibox h1 {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+@media screen and (min-width: 600px) {
+  #demo .minibox {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: #b32100;
+    transition: 4s;
+  }
+  #demo .minibox:hover {
+    width: 500px;
+  }
+  #demo .minibox h1 {
+    color: #000000;
+    font-size: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
