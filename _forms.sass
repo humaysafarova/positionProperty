@@ -1,0 +1,25 @@
+#forms
+    .box
+        .minibox
+            width: 100px
+            height: 100px
+            border: 3px solid #e17b14
+            transition: 2s
+            &:hover
+                border-radius: 30px
+                border: 3px solid #241eda
+                width: 200px
+                height: 200px
+                h1
+                    color: #07c416
+            h1
+                font-size: 30px
+                text-align: center
+        @media screen and ( min-width: 600px )
+            .minibox
+                width: 300px
+                height: 300px
+                border: 3px solid #39bbcf
+                background-color: #db65ad
+                h1
+                    font-size: 60px
