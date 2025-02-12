@@ -3,34 +3,60 @@ body {
   font-weight: 500;
 }
 
-#demo .minibox {
-  border: 1px solid black;
+#demo .box {
+  margin-bottom: 80px;
+}
+#demo .box .minibox {
+  border: 1px solid #ffa3ff;
   width: 100px;
   height: 100px;
-  background-color: #996da6;
   transition: 2s;
 }
-#demo .minibox:hover {
-  width: 300px;
+#demo .box:hover {
+  width: 200px;
+  height: 60px;
+  border: 2px solid #3c0641;
 }
-#demo .minibox h1 {
+#demo .box:hover h1 {
+  color: #451841;
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  #demo .box .minibox {
+    border: 1px solid #ffa3ff;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #demo .box .minibox {
+    border: 2px solid #1bb12f;
+    background-color: #226ac1;
+  }
+  #demo .box .minibox h1 {
+    color: white;
+  }
+}
+#demo .box1 .minibox {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #030303;
+  background-color: #ba0c49;
+  transition: 2s;
+}
+#demo .box1 .minibox:hover {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #d2d427;
+}
+#demo .box1 .minibox h1 {
   color: white;
-  text-align: center;
-  font-size: 25px;
 }
-@media screen and (min-width: 600px) {
-  #demo .minibox {
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    background-color: #b32100;
-    transition: 4s;
-  }
-  #demo .minibox:hover {
-    width: 500px;
-  }
-  #demo .minibox h1 {
-    color: #000000;
-    font-size: 50px;
+@media screen and (max-width: 600px) {
+  #demo .box1 .minibox {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #20ad20;
+    background-color: #1c50a8;
   }
 }/*# sourceMappingURL=style.css.map */
